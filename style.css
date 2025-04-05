@@ -5,9 +5,7 @@ body {
     border-top: 3px solid #282;
 }
 .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
     background-color: #ffffff;
     padding: 15px 30px;
     border-bottom: 1px solid #ddd;
@@ -19,18 +17,18 @@ body {
 
 .logo img {
     height: 60px;
+    margin-bottom: 20px;
 }
 
 .nav-links {
     list-style: none;
-    display: flex;
     padding: 0;
     margin: 0;
-    flex-wrap: wrap;
+    display: block;
 }
 
 .nav-links li {
-    margin: 0 15px;
+    margin-bottom: 10px;
 }
 
 .nav-links a {
@@ -38,16 +36,17 @@ body {
     color: #333;
     font-weight: bold;
     font-size: 13px;
-    padding: 8px 5px;
+    padding: 5px 0;
+    display: inline-block;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #4caf50;
+    color: #282;
 }
 
 .nav-links .activo {
-    color: #4caf50;
+    color: #282;
 }
 
 
