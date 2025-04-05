@@ -17,25 +17,52 @@ body {
 .logo img {
     height: 80px;
 }
-
-.main-menu ul {
-    text-align: left;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.nav-bar {
     display: flex;
-    font-size: 13px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-.main-menu ul li {
+.logo img {
+    height: 60px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.nav-links li {
     margin: 0 15px;
 }
 
-.main-menu ul li a {
+.nav-links a {
     text-decoration: none;
-    color: black;
+    color: #333;
     font-weight: bold;
+    font-size: 13px;
+    padding: 8px 5px;
+    transition: color 0.3s ease;
 }
+
+.nav-links a:hover {
+    color: #4caf50;
+}
+
+.nav-links .activo {
+    color: #4caf50;
+}
+
 
 .sub-menu {
     text-align: center;
