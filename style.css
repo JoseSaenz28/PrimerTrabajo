@@ -4,8 +4,11 @@ body {
     padding: 0;
     border-top: 3px solid #282;
 }
+
 .nav-bar {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #ffffff;
     padding: 15px 30px;
     border-bottom: 1px solid #ddd;
@@ -17,18 +20,19 @@ body {
 
 .logo img {
     height: 60px;
-    margin-bottom: 20px;
 }
 
 .nav-links {
     list-style: none;
+    display: flex;
     padding: 0;
     margin: 0;
-    display: block;
+    gap: 25px;
+    align-items: center;
 }
 
 .nav-links li {
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 .nav-links a {
@@ -36,25 +40,22 @@ body {
     color: #333;
     font-weight: bold;
     font-size: 13px;
-    padding: 5px 0;
-    display: inline-block;
+    padding: 5px;
     transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-    color: #282;
+    color: #4caf50;
 }
 
 .nav-links .activo {
-    color: #282;
+    color: #4caf50;
 }
-
 
 .sub-menu {
     text-align: center;
     padding: 10px;
     background-color: #f8f8f8;
-
 }
 
 .sub-menu ul {
@@ -74,8 +75,6 @@ body {
     color: #282;
     font-weight: bold;
 }
-
-
 
 .content {
     max-width: 1200px;
@@ -97,9 +96,3 @@ body {
     height: auto;
     border-radius: 5px;
 }
-span{
-    color: #282;
-    font-weight: bold;
-    font-size: 13px;
-}
-
